@@ -21,11 +21,13 @@ import SP13 from '../../assets/Images/z3795273869585_39f94d2936dc28ee191dd4d47e4
 import SP14 from '../../assets/Images/mceclip1_6.jpg';
 import SP15 from '../../assets/Images/mceclip2_89.jpg';
 import SP16 from '../../assets/Images/mceclip3_16.jpg';
+import Slide from '../../components/Layouts/DefaultLayout/Slide/Slide';
 
 
-function MyHome() {
+const MyHome = () => {
     return (
         <>
+        <Slide/>
             <div className="module three-up overlay-true">
                 <div className="module-interior">
                     <div className="block-module block-1">

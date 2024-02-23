@@ -8,7 +8,6 @@ function DefaultLayout({children}) {
         <div>
             <Header />
             <div className="container">
-                <Slide />
                 <div className="content">
                     {children}
                 </div>

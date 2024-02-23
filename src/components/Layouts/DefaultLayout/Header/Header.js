@@ -13,18 +13,34 @@ const Header = () => {
                 <img src={Logo} alt="" />
             </a>
             <ul className="navmenu">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="Products.html">Products</a></li>
-                <li><a href="Products">page</a></li>
-                <li><a href="Products">Sale</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/shoping">Shop</a>
+                </li>
+                <li>
+                    <a href="/product">Products</a>
+                </li>
+                <li>
+                    <a href="Products">page</a>
+                </li>
+                <li>
+                    <a href="Products">Sale</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
             </ul>
             <div className="nav-icon">
                 <a className="menu-icon" href="Products"><FaSearch/></a>
-                <a className="menu-icon" href="Login.html"><FaUser /></a>
+                <a className="menu-icon" href="/login"><FaUser /></a>
                 <a className="menu-icon" href="ShoppingCart.html"><FaShoppingCart/></a>
                 <a className="menu-icon" href="ShoppingCart.html"><FaBars/></a>
             </div>
