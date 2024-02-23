@@ -67,7 +67,7 @@ const MyHome = () => {
                         </div>
                         <div className="price">
                             <h4>
-                                <a href="Products.html"> Nylon Twill Bomber</a>
+                                <a href="/product"> Nylon Twill Bomber</a>
                             </h4>
                             <p>250.000 ₫ </p>
                         </div>
