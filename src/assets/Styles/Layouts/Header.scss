@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #e62e04;
+    --border-color: #dbdbdb;
+    --feedback-color: #fe9b00;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2%;
+    height: 80px;
+
+    &.sticky {
+        background: #fff;
+        padding: 10px 5%;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0 , 10%);
+    }
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+
+    a {
+        color: #2c2c2c;
+        font-size: 18px;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        font-weight: 410;
+        transition: all .42s ease;
+        font-family: system-ui;
+
+        &:hover {
+            transform: scale(1.1);
+            color: #ee1c47;
+        }
+    }
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-right: 20px;
+        color: #2c2c2c;
+        font-size: 25px;
+        font-weight: 400;
+        transition: all .42s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            color: #ee1c47;
+        }
+    }
+}
+
+a.menu-icon {
+    font-size: 23px;
+    padding: 10px;
+}
+
+.menu-icon {
+    color: #2c2c2c;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 890px) {
+    header {
+        padding: 0% 10%;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 750px) {
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+
+        a {
+            display: block;
+            margin: 15px 0;
+        }
+
+        &.open {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .grid {
+        left: 0%;
+        width: 440px;
+        height: 550px;
+        background: #edfff1;
+    }
+}
+
+@media (max-width: 990px) {
+    .block-1, .block-2, .block-3 {
+        display: flex;
+        justify-content: space-between;
+        width: 311px;
+    }
+}
+
+@media (max-width: 1058px) {
+    .block-1, .block-2, .block-3 {
+        display: flex;
+        justify-content: space-between;
+        width: 341px;
+    }
+}
